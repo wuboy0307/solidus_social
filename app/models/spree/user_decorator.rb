@@ -1,5 +1,5 @@
 Spree.user_class.class_eval do
-  has_many :user_authentications, :dependent => :destroy, :class_name => "Spree::AuthenticationMethod"
+  has_many :user_authentications, :dependent => :destroy, :class_name => "Spree::UserAuthentication"
 
   devise :omniauthable
 
